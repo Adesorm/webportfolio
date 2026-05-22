@@ -1,5 +1,9 @@
 
         // Simple scroll spy for active navigation
+    const inner = document.getElementById("landing");
+
+console.log(inner);
+
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('nav .hidden a');
