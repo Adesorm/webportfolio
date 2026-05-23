@@ -341,4 +341,78 @@ Publicly documented using Postman.</p>
 </div>
 </div>
 </div>
- 
+<form class="space-y-6" onsubmit="event.preventDefault()">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-mono text-xs uppercase text-on-surface-variant">Name</label>
+<input class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-xs uppercase text-on-surface-variant">Email</label>
+<input class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-xs uppercase text-on-surface-variant">Message</label>
+<textarea  class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Tell me about your project..." rows="12"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary rounded-lg font-bold hover:bg-primary/90 transition-colors shadow-lg active:scale-[0.98]">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant/20 py-16">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 px-gutter max-w-container-max-width mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">code</span>
+<span class="font-label-mono text-label-mono text-secondary">ADESORM CABANISAN</span>
+</div>
+<p class="text-on-surface-variant text-body-md font-body-md text-sm">© 2024 Adesorm Cabanisan • Built with Coffee &amp; Code</p>
+</div>
+<div class="flex gap-8 text-on-surface-variant font-body-md text-body-md">
+<a class="hover:text-primary hover:underline decoration-primary/30 underline-offset-4 transition-all" href="#landing">Home</a>
+<a class="hover:text-primary hover:underline decoration-primary/30 underline-offset-4 transition-all" href="#projects">My Projects</a>
+<a class="hover:text-primary hover:underline decoration-primary/30 underline-offset-4 transition-all" href="#tools">Tools</a>
+<a class="hover:text-primary hover:underline decoration-primary/30 underline-offset-4 transition-all" href="#contact">Contact</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:text-primary transition-colors border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:text-primary transition-colors border border-outline-variant/10" href="#">
+<span class="material-symbols-outlined text-xl">code_blocks</span>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll spy for active navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav .hidden a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                    link.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>
