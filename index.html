@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en">
-<head>
+<html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Adesorm Cabanisan | Web Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="index.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="index.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 
-    
+    <link rel="stylesheet" type="index.css" href="index.css">
 </head>
 <body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopAppBar -->
@@ -21,9 +19,8 @@
 <span class="material-symbols-outlined text-primary text-3xl">code</span>
 <span class="font-headline-lg text-headline-lg tracking-tighter text-on-surface">MY PORTFOLIO</span>
 </div>
-
 <div class="hidden md:flex items-center gap-8 font-nav-link text-nav-link">
-    
+<a class="text-primary border-b-2 border-primary pb-1" href="#home">Home</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors" href="#projects">My Projects</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors" href="#tools">Tools</a>
 <a class="px-6 py-2 bg-primary text-on-primary rounded-full text-white hover:scale-105 transition-transform active:scale-95 shadow-sm" href="#contact">Contact</a>
@@ -36,8 +33,7 @@
 </header>
 <main>
 <!-- Hero Section -->
-
-<section id="landing" class="relative overflow-hidden pt-24 pb-32 md:pt-32 md:pb-48 hero-gradient">
+<section id="landing" class="relative overflow-hidden pt-24 pb-32 md:pt-32 md:pb-48 hero-gradient" >
 <div id="landing" class="max-w-container-max-width mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 items-center gap-16">
 <div class="order-2 md:order-1 space-y-8">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/20 text-primary font-label-mono text-label-mono">
@@ -49,12 +45,8 @@
                     </div>
 <div class="space-y-4">
 <h1 class="font-headline-xl text-headline-xl">
-    I'm <span class="text-primary">Adesorm Cabanisan</span>,
-</h1>
-
-<h2 class="font-headline-xl text-headline-xl">
-    Full Stack Web Developer.
-</h2>
+                            I'm <span class="text-primary">Adesorm Cabanisan</span>,</h1>
+                        <h1 class=" font-headline-xl text-headline-xl ">Full Stack Web Developer.</h1>
 <p class="text-on-surface-variant max-w-lg leading-relaxed">
                             Crafting high-performance web applications with a blend of technical precision and creative design. I turn complex problems into elegant, coffee-fueled solutions.
                         </p>
@@ -71,14 +63,13 @@
 <div class="order-1 md:order-2 relative">
 <div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10"></div>
 <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl">
-<img alt="" class="w-full h-100 aspect-square object-cover" data-alt="A professional yet creative portrait of a modern web developer in a bright, clean office setting. The lighting is soft and airy, typical of a high-end tech workspace. The composition follows a minimalist aesthetic with subtle blue accents in the background, matching a light-mode UI design system. The subject conveys a friendly, approachable, and highly competent persona, perfectly blending professionalism with a casual, modern vibe." src="./images/adesorm1.png"/>
+<img alt="" class="w-full h-100 aspect-square object-cover" data-alt="A professional yet creative portrait of a modern web developer in a bright, clean office setting. The lighting is soft and airy, typical of a high-end tech workspace. The composition follows a minimalist aesthetic with subtle blue accents in the background, matching a light-mode UI design system. The subject conveys a friendly, approachable, and highly competent persona, perfectly blending professionalism with a casual, modern vibe." src="./images/Adesorm1.png"/>
 </div>
 <!-- Abstract Brackets Decor -->
 <span class="absolute -top-8 -left-8 text-[120px] font-light text-primary/10 select-none">{</span>
 <span class="absolute -bottom-8 -right-8 text-[120px] font-light text-primary/10 select-none">}</span>
 </div>
 </div>
-</section>
 </section>
 <!-- Projects Section -->
 <section class="py-section-padding-desktop bg-surface-container-lowest relative" id="projects">
@@ -329,7 +320,7 @@ Publicly documented using Postman.</p>
 </div>
 <div>
 <p class="text-xs font-label-mono text-on-surface-variant uppercase">Email me</p>
-<p class="font-semibold">cadesorm@gmail.com</p>
+<p class="font-semibold">hello@adesorm.dev</p>
 </div>
 </div>
 <div class="flex items-center gap-4">
@@ -342,7 +333,11 @@ Publicly documented using Postman.</p>
 <p class="font-semibold">Manila, Philippines</p>
 </div>
 <div>
- 
+	<div id="map-container">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123551.90678287104!2d120.8235838014913!3d14.599241715113202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1779287037205!5m2!1sen!2sus" width="460" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
 </div>
 </div>
 </div>
@@ -359,7 +354,7 @@ Publicly documented using Postman.</p>
 </div>
 <div class="space-y-2">
 <label class="font-label-mono text-xs uppercase text-on-surface-variant">Message</label>
-<textarea  class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Tell me about your project..." rows="4"></textarea>
+<textarea  class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Tell me about your project..." rows="12"></textarea>
 </div>
 <button class="w-full py-4 bg-primary text-on-primary rounded-lg font-bold hover:bg-primary/90 transition-colors shadow-lg active:scale-[0.98]">
                                 Send Message
@@ -391,10 +386,33 @@ Publicly documented using Postman.</p>
 <span class="material-symbols-outlined text-xl">share</span>
 </a>
 <a class="w-10 h-10 rounded-full bg-surface flex items-center justify-center hover:text-primary transition-colors border border-outline-variant/10" href="#">
-<span class="   material-symbols-outlined text-xl">code_blocks</span>
+<span class="material-symbols-outlined text-xl">code_blocks</span>
 </a>
 </div>
 </div>
 </footer>
-</body>
-</html>
+<script>
+        // Simple scroll spy for active navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav .hidden a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                    link.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>
