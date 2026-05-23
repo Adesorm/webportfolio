@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Adesorm Cabanisan | Web Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="index.css" href="index.css">
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 shadow-sm">
+<nav class="flex justify-between items-center px-gutter py-4 max-w-container-max-width mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">code</span>
+<span class="font-headline-lg text-headline-lg tracking-tighter text-on-surface">MY PORTFOLIO</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-nav-link text-nav-link">
+<a class="text-primary border-b-2 border-primary pb-1" href="#home">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#projects">My Projects</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#tools">Tools</a>
+<a class="px-6 py-2 bg-primary text-on-primary rounded-full text-white hover:scale-105 transition-transform active:scale-95 shadow-sm" href="#contact">Contact</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section id="landing" class="relative overflow-hidden pt-24 pb-32 md:pt-32 md:pb-48 hero-gradient" >
+<div id="landing" class="max-w-container-max-width mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+<div class="order-2 md:order-1 space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/20 text-primary font-label-mono text-label-mono">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                        Available for hire
+                    </div>
+<div class="space-y-4">
+<h1 class="font-headline-xl text-headline-xl">
+                            I'm <span class="text-primary">Adesorm Cabanisan</span>,</h1>
+                        <h1 class=" font-headline-xl text-headline-xl ">Full Stack Web Developer.</h1>
+<p class="text-on-surface-variant max-w-lg leading-relaxed">
+                            Crafting high-performance web applications with a blend of technical precision and creative design. I turn complex problems into elegant, coffee-fueled solutions.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="px-8 py-4 bg-primary text-on-primary rounded-lg font-nav-link text-nav-link hover:scale-105 transition-all duration-300 shadow-[0_10px_20px_-10px_rgba(0,98,157,0.3)]" href="#projects">
+                            View Portfolio
+                        </a>
+<a class="px-8 py-4 border-2 border-primary text-primary rounded-lg font-nav-link text-nav-link hover:bg-primary/5 transition-all" href="#contact">
+                            Let's Talk
+                        </a>
+</div>
+</div>
+<div class="order-1 md:order-2 relative">
+<div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+<div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl">
+<img alt="" class="w-full h-100 aspect-square object-cover" data-alt="A professional yet creative portrait of a modern web developer in a bright, clean office setting. The lighting is soft and airy, typical of a high-end tech workspace. The composition follows a minimalist aesthetic with subtle blue accents in the background, matching a light-mode UI design system. The subject conveys a friendly, approachable, and highly competent persona, perfectly blending professionalism with a casual, modern vibe." src="./images/Adesorm1.png"/>
+</div>
+<!-- Abstract Brackets Decor -->
+<span class="absolute -top-8 -left-8 text-[120px] font-light text-primary/10 select-none">{</span>
+<span class="absolute -bottom-8 -right-8 text-[120px] font-light text-primary/10 select-none">}</span>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-section-padding-desktop bg-surface-container-lowest relative" id="projects">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="flex flex-col items-center mb-16 space-y-4">
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-widest">// Featured Work</span>
+<h2 class="font-headline-lg text-headline-lg text-center">My Projects</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+<div class="relative overflow-hidden aspect-video bg-secondary-container">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A high-fidelity dashboard interface for a data analytics platform called Nebula Analytics. The UI features sleek glassmorphism panels, vibrant blue and teal data visualizations, and clean sans-serif typography. The overall aesthetic is professional, modern, and data-driven, set against a pristine light-mode background with soft atmospheric glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEeld6rTWlF7OdkZPIV-kBM1AAgLvdaU54HGVHvWD67StJhCQ8sq0XkUsAFIrDLRKaZLIMGGl7-q7_jv5HaZki-1g_IgNDynTYU4h1m8uhTw4nC39lqjabLfbfoATNcc_3sTRgeLrsv_HIyBTeTZh4ojzSdNy5kaQh3pU20jG70RF8HpJs53kFcfXlLnTgs9JQmzgtK8ncP2HOfRGfYOYi9cc5kxmPi8uoo94E2scS0sOXIM89zTxu-gLJdtKjdjPoHGs2LphcsYE"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-on-primary font-label-mono text-[10px] px-3 py-1 rounded-full uppercase tracking-tighter backdrop-blur-md">Analytics</span>
+</div>
+</div>
+<div class="p-8 space-y-4 flex flex-col flex-grow">
+<h3 class="font-headline-lg text-2xl font-bold">E-Commerce API Documnetation</h3>
+<p class="text-on-surface-variant text-sm line-clamp-9">Dynamic E-Commerce Workflow Management. The system features dynamic roues for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.</p>
+ </div>
+</div>
+<!-- Project 2 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+<div class="relative overflow-hidden aspect-video bg-secondary-container">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A minimalist and premium e-commerce storefront design for Lumina Store. The layout is spacious with large product imagery, elegant typography, and a sophisticated color palette of whites and soft blues. The UI emphasizes high-end fashion and lifestyle products, conveying a sense of quality and modern sophistication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAHhm7-X3RzxTMjymFtM4iPIEWG-NEiYGJYNrKSZWtxAGUQaq0LMcDE3LrsMeKMUZjvPWv_PLtiBTEKBbul50AeSs7cmjXQTlFei2yyQrnH2u_cnR6f3cMazhVgiInkA1J1CCZAvPURPPk3jnw3pLwBdhDXrXAlH4IOBhR4h6rl4Ge-5YYa0XCibq0UHxYAXoXnFt0ztn2c3QewCijRxcF4Y_2HQeDk7PFRC2-g6VMyZDoPaIEJ-aVs4rfahpsJC3XKhiZOB-jsyY"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-on-primary font-label-mono text-[10px] px-3 py-1 rounded-full uppercase tracking-tighter backdrop-blur-md">E-Commerce</span>
+</div>
+</div>
+<div class="p-8 space-y-4 flex flex-col flex-grow">
+<h3 class="font-headline-lg text-2xl font-bold">Course Booking API Documentation</h3>
+<p class="text-on-surface-variant text-sm line-clamp-9">RESTful API, for managing cause enrolments, featuring user
+registration, authentication and retrieval of user details. Supports course creation updates archiving activation, and student enrollment
+Publicly documented using Postman.</p>
+ 
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+<div class="relative overflow-hidden aspect-video bg-secondary-container">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A clean and professional CRM interface called AeroFlow CRM. The design focuses on workflow efficiency with organized task boards, client contact lists, and performance charts. The color scheme is predominantly light blue and neutral slate, creating a focused and reliable atmosphere for business management." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD96qfde9iHwXGab8PkiX5DMjN7a94-XrJRvA8XcnH163lCTWSVTMS-AuGK8SuGsYfrIImCDLpiyRjMyJvmjFpgSTMJ7M40G0ngRgfbHraukj119lOGlvWkC-eGkyW0t-uqze9v11q8LgrRXDY9QJavuTx3TfKTackI7kCGAwNnpqWf-fko23WoJJprkJ_xrA8h-rqVnwYBgEirVVSO7ziXQABMgu4nM2wpxtrXDquSB1o63IQjVYPMQQBaI0sPas4CdIfjZ988Kko"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-on-primary font-label-mono text-[10px] px-3 py-1 rounded-full uppercase tracking-tighter backdrop-blur-md">Saas</span>
+</div>
+</div>
+<div class="p-8 space-y-4 flex flex-col flex-grow">
+<h3 class="font-headline-lg text-2xl font-bold">Course Booking App</h3>
+<p class="text-on-surface-variant text-sm line-clamp-9">A MERN-stack course enrollment system featuring user registration authentication, and profile management. Authenticated users can create update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
+ 
+</div>
+</div>
+
+<!-- Project 4 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+
+    <div class="relative overflow-hidden aspect-video bg-secondary-container">
+        <img 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            src="https://static.vecteezy.com/system/resources/thumbnails/003/377/380/small/line-icon-for-web-develop-vector.jpg"
+            alt=""
+        >
+
+        <div class="absolute top-4 left-4">
+            <span class="bg-primary/90 text-on-primary font-label-mono text-[10px] px-3 py-1 rounded-full uppercase tracking-tighter backdrop-blur-md">
+                Courses
+            </span>
+        </div>
+    </div>
+
+    <div class="p-8 space-y-4 flex flex-col flex-grow">
+        <h3 class="font-headline-lg text-2xl font-bold">
+            Short Courses Capstone
+        </h3>
+
+        <p class="text-on-surface-variant text-sm">
+           Place holder for your courses capstone project.
+        </p>
+
+        
+    </div>
+
+</div>
+
+<!-- Project 4 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+
+    <div class="relative overflow-hidden aspect-video bg-secondary-container">
+        <img 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            src="https://cdn-icons-png.flaticon.com/512/1688/1688400.png"
+            alt=""
+        >
+
+        <div class="absolute top-4 left-4">
+            <span class="bg-primary/90 text-on-primary font-label-mono text-[10px] px-3 py-1 rounded-full uppercase tracking-tighter backdrop-blur-md">
+                Courses
+            </span>
+        </div>
+    </div>
+
+    <div class="p-8 space-y-4 flex flex-col flex-grow">
+        <h3 class="font-headline-lg text-2xl font-bold">
+            Short Courses Capstone
+        </h3>
+
+        <p class="text-on-surface-variant text-sm">
+           Place holder for your courses capstone project.
+        </p>
+
+        
+    </div>
+
+</div>
+<!-- Project 4 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+
+    <div class="relative overflow-hidden aspect-video bg-secondary-container">
+        <img 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTib6_8PibeU7eJVXhe08Qsoyik6JHcPRcyKw&s"
+            alt=""
+        >
+
+        <div class="absolute top-4 left-4">
+            <span class="bg-primary/90 text-on-primary font-label-mono text-[10px] px-3 py-1 rounded-full uppercase tracking-tighter backdrop-blur-md">
+                Courses
+            </span>
+        </div>
+    </div>
+
+    <div class="p-8 space-y-4 flex flex-col flex-grow">
+        <h3 class="font-headline-lg text-2xl font-bold">
+            Short Courses Capstone
+        </h3>
+
+        <p class="text-on-surface-variant text-sm">
+           Place holder for your courses capstone project.
+        </p>
+
+        
+    </div>
+
+</div>
+</div>
+</div>
+
+
+<!-- Project 4 -->
+
+
+
+
+
+
+</section>
+<!-- Digital Toolbox Section -->
+<section id="tools" class="py-20 bg-gray-100">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+        <!-- Title -->
+        <h2 class="text-5xl font-bold text-blue-900 mb-16">
+            Tools
+        </h2>
+
+        <!-- Tools Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+
+            <!-- Front End -->
+            <div>
+                <h3 class="text-3xl font-semibold text-blue-800 mb-10">
+                    Front End
+                </h3>
+
+                <div class="grid grid-cols-2 gap-8 place-items-center">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="w-24 h-24 object-contain">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" class="w-24 h-24 object-contain">
+
+                    <img src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" class="w-24 h-24 object-contain">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="w-24 h-24 object-contain">
+
+                </div>
+            </div>
+
+            <!-- MERN -->
+            <div>
+                <h3 class="text-3xl font-semibold text-blue-800 mb-10">
+                    MERN
+                </h3>
+
+                <div class="grid grid-cols-2 gap-8 place-items-center">
+
+                    <img src="https://www.svgrepo.com/show/473729/mongodb.svg " class="w-24 h-24 object-contain">
+
+                    <img src="https://btkpawqujqtivqwwpzhk.supabase.co/storage/v1/object/public/uploads/tools/1771682134403-849889495.webp" class="w-24 h-24 object-contain">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" class="w-24 h-24 object-contain">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/3840px-Node.js_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnailg" class="w-24 h-24 object-contain">
+
+                </div>
+            </div>
+
+            <!-- Other Tools -->
+            <div>
+                <h3 class="text-3xl font-semibold text-blue-800 mb-10">
+                    Other Tools
+                </h3>
+
+                <div class="grid grid-cols-2 gap-8 place-items-center">
+
+                    <img src="https://images.icon-icons.com/2699/PNG/512/heroku_logo_icon_168126.png" class="w-24 h-24 object-contain">
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1280px-Git_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" class="w-24 h-24 object-contain">
+
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png" class="w-24 h-24 object-contain">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPDDOjs-NRNNFRboOOlP0aELPnIilPCRo5Q&s" class="w-24 h-24 object-contain">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact Section -->
+<section class="py-section-padding-desktop coffee-motif bg-surface-container-high/30" id="contact">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="bg-white rounded-3xl p-8 md:p-16 shadow-xl border border-outline-variant/10 relative overflow-hidden">
+<!-- Coffee abstract decor -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg">Let's talk over coffee</h2>
+<p class="text-on-surface-variant max-w-md">
+                                Have a project in mind or just want to chat about the latest tech? My inbox is always open.
+                            </p>
+<div class="space-y-6 pt-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-xs font-label-mono text-on-surface-variant uppercase">Email me</p>
+<p class="font-semibold">hello@adesorm.dev</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+
+
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<p class="text-xs font-label-mono text-on-surface-variant uppercase">Location</p>
+<p class="font-semibold">Manila, Philippines</p>
+</div>
+<div>
+    <div id="map-container">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123551.90678287104!2d120.8235838014913!3d14.599241715113202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1779287037205!5m2!1sen!2sus" width="460" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+</div>
+</div>
+</div>
+ 
