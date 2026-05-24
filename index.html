@@ -1,192 +1,398 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta
+        content="width=device-width, initial-scale=1.0"
+        name="viewport"
+    />
 
-    <html class="scroll-smooth" lang="en">
-    <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-   <link rel="icon" type="image/x-icon" href="favicon.ico">
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-   <link rel="manifest" href="/site.webmanifest">
+    <link
+        rel="icon"
+        type="image/x-icon"
+        href="favicon.ico"
+    />
 
-<!-- open graph -->
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+    />
 
-  
-<title>Adesorm Galazo Cabanisan | Full Stack Web Developer</title>
-<meta name="description" content="Portfolio showcasing my web development projects using HTML, Tailwind CSS, JavaScript, and MERN stack solutions.">
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+    />
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://adesorm.github.io/webportfolio/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Adesorm Galazo Cabanisan | Full Stack Web Developer">
-<meta property="og:description" content="Portfolio showcasing my web development projects using HTML, Tailwind CSS, JavaScript, and MERN stack solutions.">
-<meta property="og:image" content="https://adesorm.github.io/webportfolio/images/ace.jpg">
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+    />
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="adesorm.github.io">
-<meta property="twitter:url" content="https://adesorm.github.io/webportfolio/">
-<meta name="twitter:title" content="Adesorm Galazo Cabanisan | Full Stack Web Developer">
-<meta name="twitter:description" content="Portfolio showcasing my web development projects using HTML, Tailwind CSS, JavaScript, and MERN stack solutions.">
-<meta name="twitter:image" content="https://adesorm.github.io/webportfolio/images/ace.jpg"> 
+    <link
+        rel="manifest"
+        href="/site.webmanifest"
+    />
 
+    <!-- Open Graph -->
 
-<!-- open graph end -->
-    
+    <title>
+        Adesorm Galazo Cabanisan | Full Stack Web Developer
+    </title>
+
+    <meta
+        name="description"
+        content="Portfolio showcasing my web development projects using HTML, Tailwind CSS, JavaScript, and MERN stack solutions."
+    />
+
+    <!-- Facebook Meta Tags -->
+
+    <meta
+        property="og:url"
+        content="https://adesorm.github.io/webportfolio/"
+    />
+
+    <meta
+        property="og:type"
+        content="website"
+    />
+
+    <meta
+        property="og:title"
+        content="Adesorm Galazo Cabanisan | Full Stack Web Developer"
+    />
+
+    <meta
+        property="og:description"
+        content="Portfolio showcasing my web development projects using HTML, Tailwind CSS, JavaScript, and MERN stack solutions."
+    />
+
+    <meta
+        property="og:image"
+        content="https://adesorm.github.io/webportfolio/images/ace.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    />
+
+    <meta
+        property="twitter:domain"
+        content="adesorm.github.io"
+    />
+
+    <meta
+        property="twitter:url"
+        content="https://adesorm.github.io/webportfolio/"
+    />
+
+    <meta
+        name="twitter:title"
+        content="Adesorm Galazo Cabanisan | Full Stack Web Developer"
+    />
+
+    <meta
+        name="twitter:description"
+        content="Portfolio showcasing my web development projects using HTML, Tailwind CSS, JavaScript, and MERN stack solutions."
+    />
+
+    <meta
+        name="twitter:image"
+        content="https://adesorm.github.io/webportfolio/images/ace.jpg"
+    />
+
+    <!-- Open Graph End -->
+
     <script src="./tailwind.config.js"></script>
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
- 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+        rel="stylesheet"
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet"
+    />
+
     <script id="tailwind-config">
-            tailwind.config = {
-                darkMode: "class",
-                theme: {
-                    extend: {
-                        "colors": {
-                            "surface": "#f9f9ff",
-                            "on-surface-variant": "#3f4852",
-                            "secondary": "#3d627d",
-                            "on-secondary": "#ffffff",
-                            "tertiary-fixed": "#dbe4e8",
-                            "on-background": "#111c2c",
-                            "surface-container": "#e7eeff",
-                            "on-tertiary-container": "#2d3539",
-                            "on-secondary-fixed-variant": "#244a64",
-                            "on-primary-container": "#00375a",
-                            "outline": "#6f7883",
-                            "on-error-container": "#93000a",
-                            "outline-variant": "#bec7d4",
-                            "primary": "#00629d",
-                            "secondary-container": "#b9dffe",
-                            "tertiary": "#576063",
-                            "primary-container": "#00a3ff",
-                            "secondary-fixed": "#cae6ff",
-                            "secondary-fixed-dim": "#a5cbea",
-                            "primary-fixed-dim": "#98cbff",
-                            "on-tertiary-fixed": "#141d20",
-                            "surface-container-highest": "#d8e3fa",
-                            "on-tertiary-fixed-variant": "#3f484b",
-                            "surface-tint": "#00629d",
-                            "surface-container-high": "#dee8ff",
-                            "inverse-surface": "#263142",
-                            "inverse-on-surface": "#ebf1ff",
-                            "surface-variant": "#d8e3fa",
-                            "on-secondary-fixed": "#001e2f",
-                            "surface-container-lowest": "#ffffff",
-                            "error": "#ba1a1a",
-                            "surface-bright": "#f9f9ff",
-                            "on-primary-fixed-variant": "#004a77",
-                            "on-primary": "#ffffff",
-                            "on-secondary-container": "#3e637e",
-                            "on-error": "#ffffff",
-                            "surface-container-low": "#f0f3ff",
-                            "on-tertiary": "#ffffff",
-                            "on-surface": "#111c2c",
-                            "error-container": "#ffdad6",
-                            "inverse-primary": "#98cbff",
-                            "primary-fixed": "#cfe5ff",
-                            "tertiary-container": "#959ea2",
-                            "surface-dim": "#cfdaf1",
-                            "tertiary-fixed-dim": "#bfc8cc",
-                            "on-primary-fixed": "#001d33",
-                            "background": "#f9f9ff"
-                        },
-                        "borderRadius": {
-                            "DEFAULT": "0.25rem",
-                            "lg": "0.5rem",
-                            "xl": "0.75rem",
-                            "full": "9999px"
-                        },
-                        "spacing": {
-                            "section-padding-mobile": "64px",
-                            "container-max-width": "1200px",
-                            "base": "8px",
-                            "section-padding-desktop": "120px",
-                            "gutter": "24px"
-                        },
-                        "fontFamily": {
-                            "label-mono": ["JetBrains Mono"],
-                            "headline-xl": ["Hanken Grotesk"],
-                            "nav-link": ["Hanken Grotesk"],
-                            "headline-lg-mobile": ["Hanken Grotesk"],
-                            "body-md": ["Plus Jakarta Sans"],
-                            "headline-lg": ["Hanken Grotesk"]
-                        },
-                        "fontSize": {
-                            "label-mono": ["14px", {"lineHeight": "1.5", "letterSpacing": "0.05em", "fontWeight": "500"}],
-                            "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                            "nav-link": ["16px", {"lineHeight": "1.0", "fontWeight": "600"}],
-                            "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                            "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                            "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}]
-                        }
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        surface: "#f9f9ff",
+                        "on-surface-variant": "#3f4852",
+                        secondary: "#3d627d",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#dbe4e8",
+                        "on-background": "#111c2c",
+                        "surface-container": "#e7eeff",
+                        "on-tertiary-container": "#2d3539",
+                        "on-secondary-fixed-variant": "#244a64",
+                        "on-primary-container": "#00375a",
+                        outline: "#6f7883",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#bec7d4",
+                        primary: "#00629d",
+                        "secondary-container": "#b9dffe",
+                        tertiary: "#576063",
+                        "primary-container": "#00a3ff",
+                        "secondary-fixed": "#cae6ff",
+                        "secondary-fixed-dim": "#a5cbea",
+                        "primary-fixed-dim": "#98cbff",
+                        "on-tertiary-fixed": "#141d20",
+                        "surface-container-highest": "#d8e3fa",
+                        "on-tertiary-fixed-variant": "#3f484b",
+                        "surface-tint": "#00629d",
+                        "surface-container-high": "#dee8ff",
+                        "inverse-surface": "#263142",
+                        "inverse-on-surface": "#ebf1ff",
+                        "surface-variant": "#d8e3fa",
+                        "on-secondary-fixed": "#001e2f",
+                        "surface-container-lowest": "#ffffff",
+                        error: "#ba1a1a",
+                        "surface-bright": "#f9f9ff",
+                        "on-primary-fixed-variant": "#004a77",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#3e637e",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f0f3ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#111c2c",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#98cbff",
+                        "primary-fixed": "#cfe5ff",
+                        "tertiary-container": "#959ea2",
+                        "surface-dim": "#cfdaf1",
+                        "tertiary-fixed-dim": "#bfc8cc",
+                        "on-primary-fixed": "#001d33",
+                        background: "#f9f9ff"
                     },
-                },
+
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+
+                    spacing: {
+                        "section-padding-mobile": "64px",
+                        "container-max-width": "1200px",
+                        base: "8px",
+                        "section-padding-desktop": "120px",
+                        gutter: "24px"
+                    },
+
+                    fontFamily: {
+                        "label-mono": ["JetBrains Mono"],
+                        "headline-xl": ["Hanken Grotesk"],
+                        "nav-link": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Hanken Grotesk"]
+                    },
+
+                    fontSize: {
+                        "label-mono": [
+                            "14px",
+                            {
+                                lineHeight: "1.5",
+                                letterSpacing: "0.05em",
+                                fontWeight: "500"
+                            }
+                        ],
+
+                        "headline-xl": [
+                            "64px",
+                            {
+                                lineHeight: "1.1",
+                                letterSpacing: "-0.02em",
+                                fontWeight: "800"
+                            }
+                        ],
+
+                        "nav-link": [
+                            "16px",
+                            {
+                                lineHeight: "1.0",
+                                fontWeight: "600"
+                            }
+                        ],
+
+                        "headline-lg-mobile": [
+                            "32px",
+                            {
+                                lineHeight: "1.2",
+                                fontWeight: "700"
+                            }
+                        ],
+
+                        "body-md": [
+                            "18px",
+                            {
+                                lineHeight: "1.6",
+                                fontWeight: "400"
+                            }
+                        ],
+
+                        "headline-lg": [
+                            "48px",
+                            {
+                                lineHeight: "1.2",
+                                fontWeight: "700"
+                            }
+                        ]
+                    }
+                }
             }
-        </script>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+        };
+    </script>
+
+    <link
+        rel="stylesheet"
+        href="index.css"
+    />
+</head>
+
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+
     <!-- TopAppBar -->
     <header class="bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 shadow-sm">
-    <nav class="flex justify-between items-center px-gutter py-4 max-w-container-max-width mx-auto">
-    <div class="flex items-center gap-2">
-    <span class="material-symbols-outlined text-primary text-3xl">code</span>
-    <span class="font-headline-lg text-headline-lg tracking-tighter text-on-surface">MY PORTFOLIO</span>
-    </div>
-    <div class="hidden md:flex items-center gap-8 font-nav-link text-nav-link">
-    <a class="text-primary border-b-2 border-primary pb-1" href="#landing">Home</a>
-    <a class="text-on-surface-variant hover:text-primary transition-colors" href="#projects">My Projects</a>
-    <a class="text-on-surface-variant hover:text-primary transition-colors" href="#tools">Tools</a>
-    <a class="px-6 py-2 bg-primary text-on-primary rounded-full text-white hover:scale-105 transition-transform active:scale-95 shadow-sm" href="#contact">Contact</a>
-    </div>
-    <!-- Mobile Menu Toggle -->
-    <button class="md:hidden text-on-surface">
-    <span class="material-symbols-outlined">menu</span>
-    </button>
-    </nav>
+
+        <nav class="flex justify-between items-center px-gutter py-4 max-w-container-max-width mx-auto">
+
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-3xl">
+                    code
+                </span>
+
+                <span class="font-headline-lg text-headline-lg tracking-tighter text-on-surface">
+                    MY PORTFOLIO
+                </span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 font-nav-link text-nav-link">
+                <a
+                    class="text-primary border-b-2 border-primary pb-1"
+                    href="#landing"
+                >
+                    Home
+                </a>
+
+                <a
+                    class="text-on-surface-variant hover:text-primary transition-colors"
+                    href="#projects"
+                >
+                    My Projects
+                </a>
+
+                <a
+                    class="text-on-surface-variant hover:text-primary transition-colors"
+                    href="#tools"
+                >
+                    Tools
+                </a>
+
+                <a
+                    class="px-6 py-2 bg-primary text-on-primary rounded-full text-white hover:scale-105 transition-transform active:scale-95 shadow-sm"
+                    href="#contact"
+                >
+                    Contact
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button
+                class="md:hidden text-on-surface"
+                aria-label="Close menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+
+        </nav>
     </header>
+
     <main>
-    <!-- Hero Section -->
-    <section id="landing" class="relative overflow-hidden pt-24 pb-32 md:pt-32 md:pb-48 hero-gradient" >
-    <div class="max-w-container-max-width mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 items-center gap-16">
-    <div class="order-2 md:order-1 space-y-8">
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/20 text-primary font-label-mono text-label-mono">
-    <span class="relative flex h-2 w-2">
-    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-    </span>
-                            Available for hire
-                        </div>
-    <div class="space-y-4">
-    <h1 class="font-headline-xl text-headline-xl">
-                                I'm <span class="text-primary">Adesorm Cabanisan</span>,</h1>
-                            <h1 class=" font-headline-xl text-headline-xl ">Full Stack Web Developer.</h1>
-    <p class="text-on-surface-variant max-w-lg leading-relaxed">
-                                Crafting high-performance web applications with a blend of technical precision and creative design. I turn complex problems into elegant, coffee-fueled solutions.
-                            </p>
-    </div>
-    <div class="flex flex-wrap gap-4 pt-4">
-    <a class="px-8 py-4 bg-primary text-on-primary rounded-lg font-nav-link text-nav-link hover:scale-105 transition-all duration-300 shadow-[0_10px_20px_-10px_rgba(0,98,157,0.3)]" href="#projects">
-                                View Portfolio
-                            </a>
-    <a class="px-8 py-4 border-2 border-primary text-primary rounded-lg font-nav-link text-nav-link hover:bg-primary/5 transition-all" href="#contact">
-                                Let's Talk
-                            </a>
-    </div>
-    </div>
-    <div class="order-1 md:order-2 relative">
-    <div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10"></div>
-    <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl">
-    <img alt="picture of Adesorm" class="w-full h-100 aspect-square object-cover"  src="./images/adesorm1.png"/>
-    </div>
-    <!-- Abstract Brackets Decor -->
-    <span class="absolute -top-8 -left-8 text-[120px] font-light text-primary/10 select-none">{</span>
-    <span class="absolute -bottom-8 -right-8 text-[120px] font-light text-primary/10 select-none">}</span>
-    </div>
-    </div>
+
+        <!-- Hero Section -->
+        <section
+            id="landing"
+            class="relative overflow-hidden pt-24 pb-32 md:pt-32 md:pb-48 hero-gradient"
+        >
+            <div class="max-w-container-max-width mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+
+                <div class="order-2 md:order-1 space-y-8">
+
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/10 border border-primary/20 text-primary font-label-mono text-label-mono">
+
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+
+                        Available for hire
+                    </div>
+
+                    <div class="space-y-4">
+
+                        <h1 class="font-headline-xl text-headline-xl">
+                            I'm
+                            <span class="text-primary">
+                                Adesorm Cabanisan
+                            </span>,
+                        </h1>
+
+                        <h1 class="font-headline-xl text-headline-xl">
+                            Full Stack Web Developer.
+                        </h1>
+
+                        <p class="text-on-surface-variant max-w-lg leading-relaxed">
+                            Crafting high-performance web applications with a blend
+                            of technical precision and creative design. I turn
+                            complex problems into elegant, coffee-fueled solutions.
+                        </p>
+            </div>
+            <div class="flex flex-wrap gap-4 pt-4">
+            <a class="px-8 py-4 bg-primary text-on-primary rounded-lg font-nav-link text-nav-link hover:scale-105 transition-all duration-300 shadow-[0_10px_20px_-10px_rgba(0,98,157,0.3)]" href="#projects">
+                                        View Portfolio
+                                    </a>
+            <a class="px-8 py-4 bg-primary text-white rounded-lg font-nav-link text-nav-link hover:scale-105 transition-all duration-300" href="./adesorm_cabanisan.pdf"
+               target="_blank">
+                View Resume
+            </a>
+            <a class="px-8 py-4 border-2 border-primary text-primary rounded-lg font-nav-link text-nav-link hover:bg-primary/5 transition-all" href="#contact">
+                                        Let's Talk
+                                    </a>
+
+            </div>
+
+            </div>
+            <div class="order-1 md:order-2 relative">
+            <div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+            <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl">
+            <img alt="picture of Adesorm" class="w-full h-100 aspect-square object-cover"  src="./images/adesorm1.png"/>
+            </div>
+            <!-- Abstract Brackets Decor -->
+            <span class="absolute -top-8 -left-8 text-[120px] font-light text-primary/10 select-none">{</span>
+            <span class="absolute -bottom-8 -right-8 text-[120px] font-light text-primary/10 select-none">}</span>
+            </div>
+            </div>
     </section>
     <!-- Projects Section -->
     <section class="py-section-padding-desktop bg-surface-container-lowest relative" id="projects">
@@ -336,13 +542,9 @@
 
 
     <!-- Project 4 -->
-
-
-
-
-
-
     </section>
+
+
     <!-- Digital Toolbox Section -->
     <section id="tools" class="py-20 bg-gray-100">
 
@@ -418,68 +620,71 @@
         </div>
 
     </section>
+
+
+    
     <!-- Contact Section -->
     <section class="py-section-padding-desktop coffee-motif bg-surface-container-high/30" id="contact">
-    <div class="max-w-container-max-width mx-auto px-gutter">
-    <div class="bg-white rounded-3xl p-8 md:p-16 shadow-xl border border-outline-variant/10 relative overflow-hidden">
-    <!-- Coffee abstract decor -->
-    <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
-    <div class="space-y-8">
-    <h2 class="font-headline-lg text-headline-lg">Let's talk over coffee</h2>
-    <p class="text-on-surface-variant max-w-md">
-                                    Have a project in mind or just want to chat about the latest tech? My inbox is always open.
-                                </p>
-    <div class="space-y-6 pt-4">
-    <div class="flex items-center gap-4">
-    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-    <span class="material-symbols-outlined">mail</span>
-    </div>
-    <div>
-    <p class="text-xs font-label-mono text-on-surface-variant uppercase">Email me</p>
-    <p class="font-semibold">cadesorm@gmail.com</p>
-    </div>
-    </div>
-    <div class="flex items-center gap-4">
+            <div class="max-w-container-max-width mx-auto px-gutter">
+            <div class="bg-white rounded-3xl p-8 md:p-16 shadow-xl border border-outline-variant/10 relative overflow-hidden">
+            <!-- Coffee abstract decor -->
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+            <div class="space-y-8">
+            <h2 class="font-headline-lg text-headline-lg">Let's talk over coffee</h2>
+            <p class="text-on-surface-variant max-w-md">
+                                            Have a project in mind or just want to chat about the latest tech? My inbox is always open.
+                                        </p>
+            <div class="space-y-6 pt-4">
+            <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined">mail</span>
+            </div>
+            <div>
+            <p class="text-xs font-label-mono text-on-surface-variant uppercase">Email me</p>
+            <p class="font-semibold">cadesorm@gmail.com</p>
+            </div>
+            </div>
+            <div class="flex items-center gap-4">
 
 
-    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-    <span class="material-symbols-outlined">location_on</span>
-    </div>
-    <p class="text-xs font-label-mono text-on-surface-variant uppercase">Location</p>
-    <p class="font-semibold">Salcedo, Ilocos Sur</p>
-    </div>
-    <div>
-        <div id="map-container">
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <p class="text-xs font-label-mono text-on-surface-variant uppercase">Location</p>
+            <p class="font-semibold">Salcedo, Ilocos Sur</p>
+            </div>
+            <div>
+                <div id="map-container-fluid" class="ms-auto">
 
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122019.71240713049!2d120.46083389470708!3d17.115839433395358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e226f962c5c7f%3A0x148db006f0cb7e46!2sSalcedo%2C%20Ilocos%20Sur!5e0!3m2!1sen!2sph!4v1779517070540!5m2!1sen!2sph" width="400" height="180" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122019.71240713049!2d120.46083389470708!3d17.115839433395358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e226f962c5c7f%3A0x148db006f0cb7e46!2sSalcedo%2C%20Ilocos%20Sur!5e0!3m2!1sen!2sph!4v1779517070540!5m2!1sen!2sph" width="400" height="180" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    </div>
-    </div>
-    </div>
-    </div>
-    <form id="form" class="space-y-6" onsubmit="event.preventDefault()">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="space-y-2">
-    <label class="font-label-mono text-xs uppercase text-on-surface-variant">Name</label>
-    <input class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Full name" type="text"/>
-    </div>
-    <div class="space-y-2">
-    <label class="font-label-mono text-xs uppercase text-on-surface-variant">Email</label>
-    <input class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="john@example.com" type="email"/>
-    </div>
-    </div>
-    <div class="space-y-2">
-    <label class="font-label-mono text-xs uppercase text-on-surface-variant">Message</label>
-    <textarea  class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Tell me about your project..." rows="12"></textarea>
-    </div>
-    <button class="w-full py-4 bg-primary text-on-primary rounded-lg font-bold hover:bg-primary/90 transition-colors shadow-lg active:scale-[0.98]">
-                                    Send Message
-                                </button>
-    </form>
-    </div>
-    </div>
-    </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <form id="form" class="space-y-6" onsubmit="event.preventDefault()">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+            <label class="font-label-mono text-xs uppercase text-on-surface-variant">Name</label>
+            <input class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Full name" type="text"/>
+            </div>
+            <div class="space-y-2">
+            <label class="font-label-mono text-xs uppercase text-on-surface-variant">Email</label>
+            <input class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="john@example.com" type="email"/>
+            </div>
+            </div>
+            <div class="space-y-2">
+            <label class="font-label-mono text-xs uppercase text-on-surface-variant">Message</label>
+            <textarea  class="w-full bg-surface border border-outline-variant/30 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Tell me about your project..." rows="12"></textarea>
+            </div>
+            <button class="w-full py-4 bg-primary text-on-primary rounded-lg font-bold hover:bg-primary/90 transition-colors shadow-lg active:scale-[0.98]">
+                                            Send Message
+                                        </button>
+            </form>
+            </div>
+            </div>
+            </div>
     </section>
     </main>
     <!-- Footer -->
@@ -490,7 +695,7 @@
     <span class="material-symbols-outlined text-secondary">code</span>
     <span class="font-label-mono text-label-mono text-secondary">ADESORM CABANISAN</span>
     </div>
-    <p class="text-on-surface-variant text-body-md font-body-md text-sm">© 2024 Adesorm Cabanisan • Built with Coffee &amp; Code</p>
+    <p class="text-on-surface-variant text-body-md font-body-md text-sm">© 2026 Adesorm Cabanisan • Built with Coffee &amp; Code</p>
     </div>
     <div class="flex gap-8 text-on-surface-variant font-body-md text-body-md">
     <a class="hover:text-primary hover:underline decoration-primary/30 underline-offset-4 transition-all" href="#landing">Home</a>
